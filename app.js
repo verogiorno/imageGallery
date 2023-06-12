@@ -28,7 +28,6 @@ let spanClose = closeImgPopup .querySelector('img')
 let altImg = closeImgPopup .querySelector('.copy')
 let btnClose = closeImgPopup .querySelector('.close')
 let contFig = document.querySelectorAll('.grid-container .img-cont')
-console.log(contFig)
 
 window.onload = ()=>{
     for(let i = 0; i < gridContainer.length; i++){
@@ -40,7 +39,6 @@ window.onload = ()=>{
                 let selectedImgUrl = gridContainer[newIndex].src
                 spanClose.src = selectedImgUrl 
                 altImg.innerHTML = gridContainer[newIndex].alt
-                console.log(selectedImgUrl)
             }
 
 // PREVIOUS & NEXT SLIDE gridContainer
